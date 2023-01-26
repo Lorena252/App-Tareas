@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>App Tareas</title>
+  </head>
+  <body class="body">
+
+                             
+ <header>
+         <h1 class="texto"></i>APP DE TAREAS</h1>
+          <button type="button" class="btn-modo"> 🌞</button>
+ </header>
+                        
+<section class="mi-seccion">
+    <div class="primer-caja">
+      <select  id="estado">
+        <option  value ="" disabled  selected > Seleccione un estado </option>
+        <option value="Terminado">Terminado</option>
+        <option value="En proceso">En proceso</option>
+        <option value="Pendiente">Pendiente</option>
+       </select>
+ <form>
+    <input id="tituloUno" type="text"  placeholder="Ingresar Tarea"required />
+    <button id="btn-crear" type="submit" class="btn-crear-tarea">Crear Tarea</button>
+ </form>
+    </div>
+
+    <main class="main">
+        <div class="todas-cajas">
+
+       <div>
+          <div class="caja primera" id="contenedor-terminado" >
+          </div>
+       </div>
+          
+       <div>
+          <div class="caja segunda" id="contenedor-progreso" >
+          </div >
+        </div>
+
+        <div>    
+            <div class="caja tercera" id="contenedor-pendiente" >
+            </div>
+        </div>
+
+        </div>
+    </main>
+ </section>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+

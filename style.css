@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: rgba(201, 235, 134, 0.774);
+--color--body: rgb(37, 19, 204);
+ --color--header:rgba(255, 254, 254, 0.884); 
+--color--main: rgb(255, 255, 255);
+box-shadow: 1px 15px 90px rgba(214, 26, 167, 0.87);
+--color--primera-caja: rgb(252, 255, 104) ; 
+--color--segunda-caja: rgb(218, 163, 63);
+--color--tercera-caja:  rgba(235, 65, 65, 0.993);
+                                   
+ }          
+
+ .dark{
+   --color--body:rgb(54, 54, 80);
+  --color--header:rgba(44, 44, 48, 0.945);
+  --color--mi-seccion:rgba(25, 25, 51, 0.5);
+  --color--main:rgba(29, 29, 31, 0.849);
+ box-shadow: 1px 15px 80px rgb(11, 2, 61);
+ --color--primera-caja: rgb(113, 129, 20) ; 
+ --color--segunda-caja: rgb(184, 134, 42);
+--color--tercera-caja:  rgb(207, 53, 53);
+--color--texto: rgb(241, 237, 237);
+}
+
+body .mi-seccion{
+  height: 100%;
+  width: 100%;
+   color: var(--color--texto); 
+  background-color: var(--color--mi-seccion);
+   background-repeat: no-repeat; 
+   position: fixed;
+   align-items: center;
+    justify-content: center;   
+}
+
+header{
+   background-color:var(--color--header);
+   color: var(--color--texto);
+    height: 100px;
+    display: flex;
+     justify-content: center ;
+    align-items: center;
+     box-shadow: var(--color--header)
+
+     
+};
+
+.fa-solid{
+  margin-right: 5px;
+}
+
+.primer-caja{ 
+  display: flex;
+  justify-content: center;  
+  margin-block-end: 50px;
+  margin-block-start: 50px;
+}
+input , select{
+  padding: 15px 50px 15px;
+  border-radius: 5px; 
+  border: none;
+  outline: none; 
+  margin-inline-start: 10px;
+}
+
+.btn-modo{
+  padding: 15px 20px 15px;
+border: none;
+background-color: rgb(255, 255, 255);
+box-shadow:  0 0 15px 10px rgba(83, 83, 83, 0.315);
+border-radius: 5px; 
+ cursor: pointer;
+ margin-inline-start: 10px;
+}
+
+.btn-crear-tarea{
+padding: 15px 50px 15px;
+border: none;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+box-shadow:  0 0 15px 10px rgba(83, 83, 83, 0.315);
+border-radius: 5px; 
+ cursor: pointer;
+ margin-inline-start: 10px;
+}
+
+.caja-modo{
+  padding-top: 15px;
+} 
+
+h1{
+    display: flex;
+     justify-content: center;
+    padding-top: 15px;
+}
+
+main{
+    background-color: var(--color--main);
+    padding: 10px;
+    margin-top: 0px;
+   display: flex; 
+   align-items: center; 
+   justify-content: center; 
+   margin:50px 150px 50px 200px;
+
+}
+
+.todas-cajas{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja{
+width: 300px;
+height: 250px; 
+margin: 15px;
+}
+
+.primera{
+ background-color: var(--color--primera-caja);
+}
+
+.segunda{
+background-color: var(--color--segunda-caja);
+}
+
+.tercera{
+background-color: var(--color--tercera-caja);
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    header {
+    width: 100%;
+   padding: 50px 100px 50px;
+    }
+  }
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .miSeccion {
+   width: 100%; 
+  height: 80%;
+  padding: 0;
+  position: absolute;
+ display: block;
+    }
+  }
+
+
+
+@media (min-width: 300px) and (max-width: 900px) {
+    main {
+      display: flex;
+    flex-direction: column;
+   align-items: center;
+   margin: 50px 100px 50px 100px
+    }
+  }
+
+  @media (min-width: 300px) and (max-width: 900px) {
+    .todas-cajas {
+      width: 100%;
+   display: block;
+   width: 100%;
+    }
+  }
+
+  @media (min-width: 300px) and (max-width: 900px) {
+.primera, .segunda, .tercera {
+margin-bottom: 10px;
+    }
+  }
+  
+@media (min-width: 300px) and (max-width: 900px) {
+  .caja {
+width: 90%;
+  }
+}
